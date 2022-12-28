@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const animals = [
+            "Elephant",
+            "Bird",
+            "Mouse",
+            "Bird",
+            "Cat",
+            "Bird",
+
+        ];
+
+        console.log(animals.indexOf("Bird"));
+        console.log(animals.lastIndexOf("Bird"));
+        console.log(animals.indexOf("Horse"));
+        console.log(animals.indexOf("Dog"));
+
+
+        const letters = ["a", "b", "c", "d", "e", "f", "g"];
+
+        console.log(letters);
+        const numbers = ["1", "2", "3", "4", "5", "6"];
+
+        console.log(numbers);
+
+        const concat = letters.concat(numbers, 2023, "I hope it will be a goood year for every poor person");
+        console.log(concat);
+
+        console.log(numbers.concat(letters , "af", "afff", 55, 554, 777));
+           
+
+        const arrayToString = concat.toString();
+        console.log(arrayToString);
+
+        const nowArray = concat.slice(
+
+        Math.floor((concat .length-1)/2)
+
+        );
+        console.log(nowArray);
+         
+
+    </script>
+</body>
+</html>

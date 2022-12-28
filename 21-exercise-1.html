@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="num1" type="text">
+    <input id="num2" type="text">
+    <p class="text">Result:</p>
+    <button onclick="sum()">SUM</button>
+
+    <script>
+
+        function sum() {
+            
+        let num1 = document.querySelector('#num1').value;
+        let num2 = document.querySelector('#num2').value;
+        let textE1 = document.querySelector(".text");
+
+        console.log(num1 ,  num2);
+        let result = num1+num2;
+        textE1.innerText = `Result: ${result}`;
+
+
+        }
+
+
+    </script>
+    
+
+    
+</body>
+</html>

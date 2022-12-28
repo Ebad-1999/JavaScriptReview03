@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id="num1" placeholder="Enter a number"/>
+    <select name = "operator" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+
+    </select>
+
+    <input type="number" id="num2" placeholder="Enter a number"/>
+    
+    <button onclick="calculate()" >CALCUALTE</button>
+    <p id="text">RESULT:</p>
+
+   <script>
+       function calculate(){
+        let num1 = Number(document.querySelector("#num1").value);
+        let num2 = Number(document.querySelector("#num2").value);
+        let operator = document.querySelector("#operator").value;
+        let text = document.querySelector("#text");
+        let result = 0;
+
+        switch(operator){
+            case "+":
+                result = num1 + num2;
+                break;
+                case "-":
+                result = num1 - num2;
+                break;
+                case "*":
+                result = num1 * num2;
+                break;
+                case "/":
+                result = num1 / num2;
+                break;
+                default:
+                    alert("There is no such operation");
+
+
+
+        }
+         text.innerText= `RESULT: ${result}`;
+
+       }
+   </script>
+
+</body>
+</html>

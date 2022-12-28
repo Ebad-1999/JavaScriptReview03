@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My title</title>
+</head>
+<body>
+    <h1><em>A heading</em></h1>
+
+    <a href="">Link Text</a>
+
+    <h1>More</h1>
+    <h1>More</h1>
+    
+
+    <p class="text red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <button type = "button" id="btn">
+        Click Me
+         
+    </button>
+
+
+    <script>
+        
+
+        //DOM Elements
+        let title = document.querySelector("h1");
+        let text = document.querySelector(".text");
+        let btn = document.querySelector("#btn");
+        let allTitle = document.querySelector("h1");
+
+
+        
+        //console.log(document.querySelector("h1"));
+        console.log(title);
+        //console.log(document.querySelectorAll(".text"));
+        console.log(text);
+        //console.log(document.querySelector("#btn"));
+        console.log(btn);
+        //console.log(document.querySelectorAll("h1"));
+        console.log("allTitle");
+
+
+
+
+        console.log(document.querySelector("h1").innerText);
+        //document.querySelector("h1").innerText = This is a test  with innerText";
+        title.innerText = `This is a test with innerText <em>`;
+        title.innerHTML = `<em> This is a test  with innerHTML<em/>`;
+
+            console.log(text.classList);
+
+
+            
+
+
+    </script>;
+</body>
+</html>

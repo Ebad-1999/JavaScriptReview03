@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1>IF ELSE PRACTICE</h1>
+
+   <input type="text" id="email" placeholder="email add"/>
+   <input type="text" id="password" placeholder="password"/>
+   <button onclick="login()">LOGIN</button>
+   <p class="text">Massage:</p>
+
+   <script>
+    
+
+    function login(){
+
+    var email = document.querySelector("#email").value;
+    var password = document.querySelector("#password").value;
+    var text = document.querySelector(".text");
+    var mail = "Techpro11@gmail.com";
+    var poss = "12345";
+    
+    if(email===mail && password===poss){
+        alert("successful login");
+
+    }else{
+        alert("incorrect password or email");
+        text.innerText = `Message: forgot password`;
+    }
+
+    
+
+    
+
+    }
+
+
+
+   </script>
+</body>
+</html>

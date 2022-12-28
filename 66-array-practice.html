@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FIND MAX AND MIN</h1>
+    
+
+    <script>
+        const myList = [5, 62, 43, 7, 51, 78, 8, 68, 456, 2];
+        
+
+        const findMaxAndMin = (brr) => {
+
+            var max = brr[0];
+            var min = brr[0];
+            for(let i =1 ;i<brr.length ; i++){
+                
+                if(brr[i]>max){
+                    max=brr[i];
+                }
+
+                if(brr[i]<min){
+                    min=brr[i];
+                }
+            }
+            return max-min;
+        };
+        
+       console.log(findMaxAndMin(myList));
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fNames = [
+                "Sauron",
+                "Frodo",
+                "Galadriel",
+                "Aragorn",
+                "Gandalf",
+            ];
+
+            const lNames = [
+                "Mordor",
+                "Shire",
+                "Valinor",
+                "Rivendell",
+                "Valinor",
+            ];
+
+            const margeName =(arr1, arr2) => {
+                let margedName = [];
+
+                for(let i in arr1){
+                    margedName[i] = `${arr1[i]} of ${arr2[i]}`
+                }
+                return margedName;
+
+                
+            };
+            console.log(margeName(fNames, lNames));
+            for(let item in String){
+                console.log(item);
+            }
+    </script>
+</body>
+</html>

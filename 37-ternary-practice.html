@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>TERNARY PRACTICE</h1>
+
+    <div style="display: flex; gap: 1rem; align-items: center;">
+    <form>
+
+        <input type="radio"
+         name="job" 
+         id="working"
+         value="working"
+         onchange="calculate()"
+           />
+
+        <label for="working">Working</label>
+        <br>
+
+        <input type="radio"
+         name="job" 
+         id="retired"
+         value="retired"
+         onchange="calculate()"
+        />
+        <label for="retired" >Retired</label>
+
+    </form>
+
+    <input type="number"
+     placeholder="Salary"
+      id="priceText"
+       style="height: 20px;"
+        onkeyup="calculate()"
+        />
+
+</div>
+
+<h3 id="result"></h3>
+
+<script>
+    function calculate() {
+        let myType = Number(document.querySelector("#input[name=`job`]:checked").value);
+        let price = document.querySelector("priceText").value;
+        let result = document.querySelector("#result").value;
+
+        price  = myType === "workign" ? price : price * 0.9;
+
+        result.innerText = price;
+    }
+</script>
+</body>
+</html>

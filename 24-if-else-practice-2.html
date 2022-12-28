@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE PRACTICE-2</title>
+</head>
+<body>
+
+    <h1>IF ELSE PRACTICE-2</h1>
+
+    <input type="text" id="textInput"/>
+    <button onclick="greetBylength()">GREET</button>
+    <p id="text"></p>
+
+    <script>
+        function greetBylength(){
+
+            let textInput = document.querySelector("#textInput").value;
+            let textE1 = document.querySelector("#text");
+
+            if(textInput.length > 2 && textE1.length < 50){
+
+                textE1.innerText = `Hello!`;
+
+            } else{
+                alert ("Please enter a text between 2 and 50 characters");
+                console.error("There is a problem with the input value's length")
+            }
+
+        }    
+        
+    
+    </script>
+
+
+    
+</body>
+</html>

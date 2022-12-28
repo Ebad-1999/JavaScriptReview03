@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1>IF ELSE PRACTICE</h1>
+
+   <input type="number" id="weigth" placeholder="weigth"/>
+   <input type="number" id="heigth" placeholder="heigth"/>
+   <button onclick="ideal()">CALCULATE</button>
+   <p class="text">Result:</p>
+
+   <script>
+    
+
+    function ideal(){
+
+    var weigth = Number(document.querySelector("#weigth").value);
+    var heigth = Number(document.querySelector("#heigth").value);
+    var text = document.querySelector(".text");
+    var idealweigth = weigth/(heigth**2);
+    
+    if(idealweigth >18.5 && idealweigth<25){
+        alert("ideal");
+
+    }else{
+        alert("Not ideal");
+    }
+
+    text.innerText = `Result: ${idealweigth}`;
+
+    
+
+    }
+
+
+
+   </script>
+</body>
+</html>
